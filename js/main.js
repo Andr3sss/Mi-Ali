@@ -7,6 +7,7 @@ import { initMusic } from './modules/music.js';
 import { initVault } from './modules/vault.js';
 import { initEasterEggs } from './modules/easterEggs.js';
 import { initReasons } from './modules/reasons.js';
+import { initQRShare } from './modules/qr-share.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Lock content initially
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initVault();
         initEasterEggs(); // Initialize secret strawberries
         initReasons(); // Initialize 100 reasons + birthday check
+        initQRShare(); // Initialize QR Share Button
 
         // Setup explore button
         setupExploreButton();
