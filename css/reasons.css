@@ -1,0 +1,172 @@
+/* ================================================================
+   100 REASONS SECTION
+   ================================================================ */
+
+.reasons-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #ffeef8 0%, #fff5f7 50%, #f0f4ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.reasons-title {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(212, 120, 154, 0.2);
+}
+
+.reasons-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+/* Birthday Banner */
+.birthday-banner {
+    background: linear-gradient(135deg, #ff6b9d 0%, #ffa8c5 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(255, 107, 157, 0.4);
+    animation: birthdayPulse 2s ease-in-out infinite;
+}
+
+@keyframes birthdayPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Reasons Grid */
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+/* Flip Card Container */
+.reason-card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    cursor: pointer;
+}
+
+.reason-card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Card Faces */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.reason-card:hover .card-front,
+.reason-card:hover .card-back {
+    box-shadow: 0 8px 25px rgba(212, 120, 154, 0.3);
+}
+
+/* Front Face */
+.card-front {
+    background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c6 100%);
+    color: #8b4367;
+}
+
+.card-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.card-icon {
+    font-size: 2rem;
+}
+
+/* Back Face */
+.card-back {
+    background: linear-gradient(135deg, #fff 0%, #ffe4e9 100%);
+    transform: rotateY(180deg);
+    color: var(--color-text-main);
+}
+
+.card-reason {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #6b4654;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reasons-title {
+        font-size: 2.5rem;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .reason-card {
+        height: 180px;
+    }
+
+    .birthday-banner {
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reasons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+    }
+
+    .reason-card {
+        height: 160px;
+    }
+
+    .card-number {
+        font-size: 2.5rem;
+    }
+
+    .card-reason {
+        font-size: 0.85rem;
+    }
+}

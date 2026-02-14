@@ -1,0 +1,295 @@
+/* ================================================================
+   DISTANCE SECTION - Long Distance Love
+   ================================================================ */
+
+.distance-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.distance-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.distance-title {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.distance-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+/* Visual Distance Display */
+.distance-visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+
+.location-point {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.location-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.location-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.location-heart {
+    font-size: 2rem;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Distance Line */
+.distance-line {
+    flex-grow: 1;
+    position: relative;
+    padding: 20px 0;
+}
+
+.distance-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.5) 10%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.5) 90%,
+            transparent 100%);
+    transform: translateY(-50%);
+}
+
+.distance-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.distance-airplane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateX(-20px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateX(20px);
+    }
+}
+
+/* Message Section */
+.distance-message {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.message-main {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.message-promise {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.95);
+    font-style: italic;
+}
+
+.message-hope {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.message-hearts {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .distance-title {
+        font-size: 2.5rem;
+    }
+
+    .distance-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    .distance-visual {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .distance-line {
+        width: 100%;
+        height: 150px;
+        padding: 0;
+    }
+
+    .distance-line::before {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: auto;
+        width: 2px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .distance-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-item {
+        padding: 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .distance-airplane {
+        animation: flyVertical 3s ease-in-out infinite;
+    }
+
+    @keyframes flyVertical {
+
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translateY(-20px) rotate(90deg);
+        }
+
+        50% {
+            transform: translate(-50%, -50%) translateY(20px) rotate(90deg);
+        }
+    }
+
+    .distance-message {
+        padding: 30px 20px;
+    }
+
+    .message-main {
+        font-size: 1.2rem;
+    }
+
+    .message-promise {
+        font-size: 1.1rem;
+    }
+
+    .message-hope {
+        font-size: 1rem;
+    }
+}

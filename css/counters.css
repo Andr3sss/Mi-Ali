@@ -1,0 +1,90 @@
+/* --- Counters Section --- */
+.counters-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #fff0f5;
+    /* Light Lavender/Pinkish background */
+    text-align: center;
+}
+
+.counters-title {
+    font-size: 2.5rem;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-lg);
+}
+
+.counters-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.counter-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    height: 500px;
+    transition: transform 0.3s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-5px);
+}
+
+.counter-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.counter-label {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 5px;
+}
+
+.counter-date {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 grid for D, H, M, S or maybe 4x1? Space is tight. */
+    gap: 10px;
+}
+
+.timer-box {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.timer-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    display: block;
+}
+
+.timer-unit {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .counters-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

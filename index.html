@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el amor de mi vida</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/counters.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/vault.css">
+    <link rel="stylesheet" href="css/easterEggs.css">
+    <link rel="stylesheet" href="css/reasons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/distance.css">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- LottieFiles Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">Cargando nuestros recuerdos...</div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Content Blocker Overlay -->
+        <div id="content-blocker" class="content-blocker"></div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-content hidden">
+                <h1 class="hero-title">Para ti, mi Ali, te amo y espero que esto te guste 💕...</h1>
+                <p class="hero-subtitle">Bienvenida a tu pagina web solo solita para ti. <span class="secret-strawberry"
+                        data-order="1" data-number="1" title="?">🍓</span></p>
+                <button class="btn-explore" id="btn-explore">Explorar Nuestro Amor</button>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <h2 class="timeline-section-title">Nuestra Historia 💕</h2>
+            <p class="timeline-section-subtitle">Cada momento contigo es un capítulo que atesoro en mi corazón</p>
+
+            <div class="timeline-container">
+
+                <!-- Milton 1: Comienzo -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">02 de Mayo 2024 📅</span>
+                        <h3 class="timeline-title">El Primer "Hola"</h3>
+                        <p class="timeline-desc">O mejor dicho el primer "Pero inv<span class="secret-letter"
+                                data-letter="i">i</span>ten 😔"¿Qué cosas no? Todo comenzó
+                            con un mensaje cualquiera en un dia cualquiera que cambió mi vida.</p>
+                        <div class="timeline-secret">
+                            Definitivamente la vida se encargó de unirnos en el momento justo... 😳
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milton 2: Primera Cita -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">06 de Julio 2024 😚</span>
+                        <h3 class="timeline-title">Nuestro Primer Beso</h3>
+                        <p class="timeline-desc">Nunca me voy a olvidar de aquel dia en aquella banca en la calle,
+                            gracias por atreverte a besarme porque yo no lo habria hecho.</p>
+                        <div class="timeline-secret">
+                            Tienes los labios que voy a querer besar por toda mi vida. ❤️
+                        </div>
+
+                        <div class="timeline-secret">
+                            Este dia es una pista para el cofre, ojala no seas tan lenta y puedas
+                            descubrirla.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milton 3: Primer Viaje -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">22/22 de Julio 2024 ✈️</span>
+                        <h3 class="timeline-title">Te me fuiste por primera vez</h3>
+                        <p class="timeline-desc">Creo que jamas he sentido peor sensacion como aquel dia en tu
+                            habitacion cuando
+                            te veia alistar tu
+                            maleta para irte y alejarme de ti por primera vez.</p>
+                        <div class="timeline-secret">
+                            No tenia idea de lo doloroso que seria estar sin ti. ⛈️
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <!-- Secret Strawberry 2 -->
+                        <span class="secret-strawberry" data-order="2" data-number="0" title="?">🍓</span>
+                        <span class="timeline-date">2 de Julio 2025 😸</span>
+                        <h3 class="timeline-title">Le ganamos a la distancia</h3>
+                        <p class="timeline-desc">Días antes de esa fecha no podia creer que al fin llegó el momento en
+                            el que podria tenerte
+                            de nuevo en mis brazos y besarte y verte y tenerte de nuevo conmigo a mi lado.</p>
+                        <div class="timeline-secret">
+                            Definitivamente la distancia no es nada cuando la persona lo es todo. 💕
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">09 de Julio 2025 ✨</span>
+                        <h3 class="timeline-title">Nuestro primer "Te amo"</h3>
+                        <p class="timeline-desc">Espero que no se haya notado que fue la primera vez que una persona no
+                            familiar me lo dijo,
+                            eres mi primer y ultimo te amo mi amor, nunca voy a a amar a alguien como te amo a ti.</p>
+                        <div class="timeline-secret">
+                            Te amo mas de lo que me quiero a mi mismo nunca lo dudes. 💖
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">10 de Julio 2025 🌠</span>
+                        <h3 class="timeline-title">...</h3>
+                        <p class="timeline-desc">Bueno no voy a entrar en detalles aqui, pero quiero que sepas que fue
+                            un dia muy especial para mi,
+                            espero que haya sido igual de especial para ti porque yo lo voy a atesorar siempre en mi
+                            corazón.</p>
+                        <div class="timeline-secret">
+                            Solo quiero que sepas que te amo y que agradezco tu existencia en mi vida. 🌟
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">12 de Julio 2025 ⚽</span>
+                        <h3 class="timeline-title">Primera vez en el estadiooo</h3>
+                        <p class="timeline-desc">Bueno esta es una fecha personal para mi, no sabes cuantas ganas tenia
+                            de compartir contigo un partido de futbol, nada mas entretenido que ver a una fresa en un
+                            lugar así.</p>
+                        <div class="timeline-secret">
+                            FRESAAA. 🤤
+                        </div>
+                        <!-- Secret Messi Ball -->
+                        <span class="secret-messi-ball" id="messi-ball" title="?">⚽</span>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">18 de Julio 2025 💦</span>
+                        <h3 class="timeline-title">Carnaval en julio</h3>
+                        <p class="timeline-desc">Eres una lenta como se te ocurre empezar a mojarnos en ese frio y tu
+                            peor que gelatina, de los dias mas
+                            divertidos que pasé contigo, nos moriamos de frio juntos pero las risas no faltaron.</p>
+                        <div class="timeline-secret">
+                            Lenta nunca mas te ayudo a lavar tus vidrios. 😾
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">27 de Julio 2025 🏔️</span>
+                        <h3 class="timeline-title">Primer paseo juntoooss</h3>
+                        <p class="timeline-desc">Este día entra en mi top 5 de dias mas felices que he tenido, a pesar
+                            de que estaba elao ahi
+                            la pasamos super chevere y divertido, pero mi parte favorita fue en el auto cuando nos
+                            estabamos regresando, despues de tanto
+                            tiempo rei de verdad gracias a ti.</p>
+                        <div class="timeline-secret">
+                            Nunca pelees conmigo en una guerra de cosquillas. 🥱
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">05 de Agosto 2025 🥳</span>
+                        <h3 class="timeline-title">Mi primera novia</h3>
+                        <p class="timeline-desc">Dios no sabes los nervios que tenia ese dia pensando que habia una
+                            posibilidad de que me dijeras que no,
+                            no sabes cuanto tiempo me llevo planar cada minimo detalle para que no sospecharas nada y
+                            asi fue, de verdad si piensas
+                            que algo pasó porque si no tienes ni idea.</p>
+                        <div class="timeline-secret">
+                            Gracias por aceptar ser mi primera novia y mi futura esposa. 💍
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">14/15 de Agosto 2025...</span>
+                        <h3 class="timeline-title"></h3>
+                        <p class="timeline-desc">No hay mucho que pueda decir sobre estos dias porque de nuevo la vida
+                            te separa de mi y duele creeme que
+                            todos los dias es un recordatorio de que el destino se llevo de nuevo mis ganas de vivir y
+                            de ser feliz, gracias por la vida que
+                            vivi en aquel mes y medio.</p>
+                        <div class="timeline-secret">
+                            Te extraño mucho amor de mi vida 😿
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Milton 4: Hoy -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Para el futuro 🎯</span>
+                        <h3 class="timeline-title"></h3>
+                        <p class="timeline-desc">No sé que nos vaya a deparar e<span class="secret-letter"
+                                data-letter="l">l</span> destino pero estoy seguro que vamos a
+                            seguir juntos,
+                            guardo esta seccion para cuando en un tiempo no muy lejano espero, podamos seguir creando
+                            recuerdos que llevare en mi mente y corazon siempre.</p>
+                        <div class="timeline-secret">
+                            ¡Y esto es solo el comienzo! 🚀
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Album Section -->
+        <section class="album-section">
+            <h2 class="album-title">Nuestros Momentos</h2>
+            <div class="album-container">
+                <!-- Stack order: Bottom in HTML is TOP physically due to z-index logic in JS (index based) -->
+                <!-- Actually index based z-index means LAST in DOM is HIGHEST z-index = TOP -->
+
+                <!-- Photo 1 (Bottom) -->
+                <div class="photo-card">
+                    <!-- Placeholders - use Unsplash or similar if no local, or empty div -->
+                    <div class="photo-img" style="background-image: url('fotos/walle.jpg');"></div>
+                    <div class="photo-caption">Wall-E</div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/cupula.jpg');"></div>
+                    <div class="photo-caption">Besooooos</div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/beso.jpg');"></div>
+                    <div class="photo-caption">Mas besoooos <span class="secret-strawberry" data-order="3"
+                            data-number="1" title="?">🍓</span></div>
+                </div>
+
+                <!-- Photo 4 (Top) -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/soho.jpg');"></div>
+                    <div class="photo-caption">Sohito</div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/carnaval.jpg');"></div>
+                    <div class="photo-caption">Carnavaaal</div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/cayambe.jpg');"></div>
+                    <div class="photo-caption">Cayambeee</div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/espejo.jpg');"></div>
+                    <div class="photo-caption">Me enacantas</div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/gatooosss.jpg');"></div>
+                    <div class="photo-caption">
+                        Gatooooooooooooooooosss
+                        <button class="photo-download-btn" onclick="downloadPhoto8()" title="Descargar">⬇️</button>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/inter.jpg');"></div>
+                    <div class="photo-caption">Ya dame mas besos</div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/pooh.jpg');"></div>
+                    <div class="photo-caption">Pooh</div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/tazas.jpg');"></div>
+                    <div class="photo-caption">Tazaaaas</div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/vitral.jpg');"></div>
+                    <div class="photo-caption">No c q poner aqui xd</div>
+                </div>
+
+                <!-- Photo 13 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/corazon.jpg');"></div>
+                    <div class="photo-caption">Legossss</div>
+                </div>
+
+                <!-- Photo 14 -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/estadio.jpg');"></div>
+                    <div class="photo-caption">Fulvo</div>
+                </div>
+
+                <!-- Photo 15 (Top) -->
+                <div class="photo-card">
+                    <div class="photo-img" style="background-image: url('fotos/fondo.jpg');"></div>
+                    <div class="photo-caption">Q foto</div>
+                </div>
+            </div>
+            <button class="btn-reset-album">Reordenar Recuerdos ↺</button>
+        </section>
+
+        <!-- Counters Section -->
+        <section class="counters-section">
+            <h2 class="counters-title">Nuestro Tiempo Juntos ⏳</h2>
+            <h3 class="counters-title">Te agradezco por brindarme de tu tiempo hasta la eternida<span
+                    class="secret-letter" data-letter="y">y</span>.</h3>
+            <div class="counters-container">
+
+                <!-- Counter 1: First Message -->
+                <div class="counter-card">
+                    <span class="counter-icon">💌</span>
+                    <h3 class="counter-label">Desde el primer "Pero inviten 😔"</h3>
+                    <span class="counter-date">2 de Mayo, 2024</span>
+                    <div class="timer" id="timer-first-msg">
+                        <div class="timer-box"><span class="timer-number days">0</span><span
+                                class="timer-unit">Días</span></div>
+                        <div class="timer-box"><span class="timer-number hours">0</span><span
+                                class="timer-unit">Horas</span></div>
+                        <div class="timer-box"><span class="timer-number minutes">0</span><span
+                                class="timer-unit">Min</span></div>
+                        <div class="timer-box"><span class="timer-number seconds">0</span><span
+                                class="timer-unit">Seg</span></div>
+                    </div>
+                </div>
+
+                <!-- Counter 2: Official -->
+                <div class="counter-card">
+                    <span class="counter-icon">💍</span>
+                    <h3 class="counter-label">Nuestro día oficial de novios</h3>
+                    <span class="counter-date">5 de Agosto, 2025</span>
+                    <div class="timer" id="timer-official">
+                        <div class="timer-box"><span class="timer-number days">0</span><span
+                                class="timer-unit">Días</span></div>
+                        <div class="timer-box"><span class="timer-number hours">0</span><span
+                                class="timer-unit">Horas</span></div>
+                        <div class="timer-box"><span class="timer-number minutes">0</span><span
+                                class="timer-unit">Min</span></div>
+                        <div class="timer-box"><span class="timer-number seconds">0</span><span
+                                class="timer-unit">Seg</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 100 Reasons Section -->
+        <section class="reasons-section">
+            <h2 class="reasons-title">100 Razones Por Las Que Te Amo 💕</h2>
+            <p class="reasons-subtitle">Cada tarjeta guarda un pedacito de mi corazón</p>
+
+            <!-- Birthday Banner (only visible on March 13) -->
+            <div class="birthday-banner" id="birthday-banner" style="display: none;">
+                🎂 ¡FELIZ CUMPLEAÑOS MI AMOR! 🎂
+            </div>
+
+            <!-- Reasons Grid (generated by JS) -->
+            <div class="reasons-grid" id="reasons-grid">
+                <!-- Cards will be generated by JavaScript -->
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="vault-section" id="vault">
+            <div id="welcome-screen">
+                <!-- Animated background -->
+                <div class="welcome-bg" id="welcome-bg"></div>
+
+                <!-- Glowing orbs -->
+                <div class="welcome-glow-orb" style="width:300px;height:300px;background:#e8a0bb;top:20%;left:15%;">
+                </div>
+                <div class="welcome-glow-orb"
+                    style="width:400px;height:400px;background:#d8b4e8;top:60%;right:10%;animation-delay:2s;"></div>
+                <div class="welcome-glow-orb"
+                    style="width:250px;height:250px;background:#f4c4d8;bottom:15%;left:50%;animation-delay:4s;"></div>
+
+                <!-- Floating hearts -->
+                <div id="welcome-hearts"></div>
+
+                <!-- Content -->
+                <div class="welcome-content">
+                    <div class="welcome-title">Para Mi Amor 💕</div>
+                    <div class="welcome-subtitle">Un cofre lleno de secretos te espera</div>
+                    <button class="btn-enter" onclick="enterVault()">
+                        <span>✦ Entrar ✦</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Curtain reveal effect -->
+            <div class="curtain-left" id="curtain-left"></div>
+            <div class="curtain-right" id="curtain-right"></div>
+
+            <!-- ══════════════════════════════════════════════════════════════ -->
+
+            <div class="bg-gradient"></div>
+            <canvas id="fireworks-canvas"></canvas>
+
+            <div class="corner-deco tl">🌸</div>
+            <div class="corner-deco tr">✨</div>
+            <div class="corner-deco bl">💫</div>
+            <div class="corner-deco br">🌸</div>
+
+            <button class="btn-info" onclick="toggleModal()" title="¿Cómo funciona?">?</button>
+
+            <!-- MODAL -->
+            <div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+                <div class="modal-box">
+                    <button class="modal-close" onclick="toggleModal()">✕</button>
+                    <div class="modal-title">✨ El Cofre de Sky ✨</div>
+                    <div class="modal-text">
+                        <p>Este es un <strong>cofre mágico</strong> protegido por Sky, mi hermosa hija.</p>
+                        <br>
+                        <p>Para abrirlo, debes descubrir <strong>6 contraseñas secretas</strong>. Cada código correcto
+                            desbloqueará uno de los candados...Hay pistas ocultas al rededor de toooda la pagina. haber
+                            si no eres tan lenta como pareces.</p>
+                        <br>
+                        <p>Escuchala muy bien a la Sky — entre sus palabras tambien hay <strong>pistas ocultas</strong>
+                            que te
+                            guiarán.
+                            Presta
+                            atención a cada mensaje.</p>
+                        <br>
+                        <p>Cuando los <strong>6 candados</strong> estén abiertos, el cofre revelará su contenido de mi
+                            para tu. 💕
+                        </p>
+                        <br>
+                        <p>Algo muy importante es que no vas a poder descifrar algunas pistas si no lo haces desde tu
+                            laptop asi que mientras descubres las claves te recomiendo hacerlo desde tu laptop y desde
+                            chrome.</p>
+                        <br>
+                        <p><em>Psdt: Si estas pensando en pedirme los codigos a mi estas perdiendo el tiempo, asi me
+                                llores no te los voy a dar a menos de que me los pidas cara a cara entendido!
+                                Adios.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- APP -->
+            <div id="app">
+                <div class="vault-title">✦ El Cofre de Sky ✦</div>
+                <div class="vault-subtitle">~ Un secreto guardado con amor ~</div>
+
+                <div class="locks-container" id="locks-container"></div>
+                <div class="progress-text" id="progress-text">0 / 6 descifrados</div>
+
+                <!-- Open Chest Button (hidden until all locks unlocked) -->
+                <button class="btn-open-chest" id="btn-open-chest" onclick="showFinalLetter()" style="display: none;">
+                    ✨ Abrir el Cofre ✨
+                </button>
+
+                <!-- SKY -->
+                <div class="guardian-section">
+                    <div id="cat-container">
+                        <div class="cat-glow"></div>
+                        <div class="cat-sparkle" style="top:8px;left:8px;animation-duration:2.2s;animation-delay:0s">✨
+                        </div>
+                        <div class="cat-sparkle" style="top:4px;right:6px;animation-duration:2.9s;animation-delay:.7s">
+                            💫</div>
+                        <div class="cat-sparkle"
+                            style="bottom:50px;left:0px;animation-duration:3.1s;animation-delay:1.5s">🌸
+                        </div>
+                        <div class="cat-sparkle"
+                            style="bottom:40px;right:-2px;animation-duration:2.5s;animation-delay:.3s">✨
+                        </div>
+
+                        <svg id="cat-svg" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+                            <defs>
+                                <radialGradient id="bodyGrad" cx="50%" cy="38%" r="55%">
+                                    <stop offset="0%" stop-color="#ffffff" />
+                                    <stop offset="58%" stop-color="#f6f0fa" />
+                                    <stop offset="100%" stop-color="#e8ddf2" />
+                                </radialGradient>
+                                <radialGradient id="headGrad" cx="50%" cy="34%" r="55%">
+                                    <stop offset="0%" stop-color="#ffffff" />
+                                    <stop offset="65%" stop-color="#f8f3fc" />
+                                    <stop offset="100%" stop-color="#eae0f4" />
+                                </radialGradient>
+                                <radialGradient id="patchGrad" cx="50%" cy="40%" r="60%">
+                                    <stop offset="0%" stop-color="#3c3046" />
+                                    <stop offset="100%" stop-color="#1c1028" />
+                                </radialGradient>
+                                <radialGradient id="eyeGrad" cx="36%" cy="28%" r="60%">
+                                    <stop offset="0%" stop-color="#f8ee72" />
+                                    <stop offset="42%" stop-color="#eaca22" />
+                                    <stop offset="100%" stop-color="#ca920c" />
+                                </radialGradient>
+                                <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f2eefa" />
+                                    <stop offset="100%" stop-color="#dacef0" />
+                                </linearGradient>
+                                <radialGradient id="earInnerGrad" cx="50%" cy="62%" r="60%">
+                                    <stop offset="0%" stop-color="#ffcce2" />
+                                    <stop offset="100%" stop-color="#ffaacc" />
+                                </radialGradient>
+                                <radialGradient id="noseGrad" cx="50%" cy="30%" r="70%">
+                                    <stop offset="0%" stop-color="#ff9ece" />
+                                    <stop offset="100%" stop-color="#ee66aa" />
+                                </radialGradient>
+                                <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(180,120,200,0.28)" />
+                                </filter>
+                            </defs>
+
+                            <!-- TAIL -->
+                            <g id="tail-group">
+                                <path d="M142 182 Q172 170 180 150 Q190 128 172 118 Q162 112 156 120" fill="none"
+                                    stroke="url(#tailGrad)" stroke-width="16" stroke-linecap="round" />
+                                <path d="M142 182 Q172 170 180 150 Q190 128 172 118 Q162 112 156 120" fill="none"
+                                    stroke="rgba(52,36,62,0.42)" stroke-width="7" stroke-linecap="round"
+                                    stroke-dasharray="11 9" />
+                                <circle cx="156" cy="120" r="7.5" fill="#ede8f8" />
+                            </g>
+
+                            <!-- BODY -->
+                            <g id="body-group">
+                                <ellipse cx="100" cy="154" rx="56" ry="48" fill="url(#bodyGrad)"
+                                    filter="url(#softShadow)" />
+                                <!-- Patches -->
+                                <ellipse cx="83" cy="158" rx="23" ry="21" fill="url(#patchGrad)" opacity=".86" />
+                                <ellipse cx="120" cy="147" rx="13" ry="17" fill="url(#patchGrad)" opacity=".74" />
+                                <!-- Belly -->
+                                <ellipse cx="106" cy="166" rx="22" ry="16" fill="rgba(255,255,255,0.48)" />
+                                <!-- Paws -->
+                                <ellipse cx="75" cy="195" rx="20" ry="11" fill="#f8f2fe" />
+                                <ellipse cx="125" cy="195" rx="20" ry="11" fill="#f8f2fe" />
+                                <!-- Toes L -->
+                                <ellipse cx="67" cy="196" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                                <ellipse cx="76" cy="199" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                                <ellipse cx="85" cy="196" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                                <!-- Toes R -->
+                                <ellipse cx="117" cy="196" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                                <ellipse cx="126" cy="199" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                                <ellipse cx="135" cy="196" rx="5" ry="4" fill="rgba(222,200,242,.55)" />
+                            </g>
+
+                            <!-- EARS -->
+                            <g id="ear-left-group" class="ear-twitch-l">
+                                <polygon points="62,56 44,16 88,50" fill="url(#headGrad)" />
+                                <polygon points="62,54 50,22 84,48" fill="url(#patchGrad)" opacity=".72" />
+                                <polygon points="63,52 54,26 80,48" fill="url(#earInnerGrad)" opacity=".82" />
+                            </g>
+                            <g id="ear-right-group" class="ear-twitch-r">
+                                <polygon points="138,56 156,16 112,50" fill="url(#headGrad)" />
+                                <polygon points="138,54 150,22 116,48" fill="url(#earInnerGrad)" opacity=".82" />
+                            </g>
+
+                            <!-- HEAD -->
+                            <circle cx="100" cy="98" r="51" fill="url(#headGrad)" filter="url(#softShadow)" />
+                            <!-- Head patch -->
+                            <ellipse cx="76" cy="84" rx="23" ry="25" fill="url(#patchGrad)" opacity=".80" />
+                            <!-- Forehead tuft -->
+                            <ellipse cx="110" cy="67" rx="10" ry="7" fill="rgba(255,255,255,0.55)" />
+
+                            <!-- BOW -->
+                            <g id="bow-group">
+                                <ellipse cx="87" cy="60" rx="12" ry="8.5" fill="#f6a8cc"
+                                    transform="rotate(-22,87,60)" />
+                                <ellipse cx="113" cy="60" rx="12" ry="8.5" fill="#f6a8cc"
+                                    transform="rotate(22,113,60)" />
+                                <circle cx="100" cy="60" r="5.5" fill="#e86090" />
+                                <ellipse cx="85" cy="57" rx="4.5" ry="3" fill="rgba(255,225,242,.58)"
+                                    transform="rotate(-22,85,57)" />
+                                <ellipse cx="115" cy="57" rx="4.5" ry="3" fill="rgba(255,225,242,.58)"
+                                    transform="rotate(22,115,57)" />
+                                <!-- Tiny ribbon tails -->
+                                <path d="M95 62 Q88 70 84 68" fill="none" stroke="#f6a8cc" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M105 62 Q112 70 116 68" fill="none" stroke="#f6a8cc" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </g>
+
+                            <!-- EYES -->
+                            <g id="eyes">
+                                <ellipse cx="83" cy="98" rx="13" ry="14" fill="url(#eyeGrad)" />
+                                <ellipse cx="117" cy="98" rx="13" ry="14" fill="url(#eyeGrad)" />
+                                <ellipse id="lpupil" cx="83" cy="98" rx="5.5" ry="9.5" fill="#180e00" />
+                                <ellipse id="rpupil" cx="117" cy="98" rx="5.5" ry="9.5" fill="#180e00" />
+                                <!-- Shines -->
+                                <circle cx="78" cy="91" r="3.2" fill="rgba(255,255,255,.95)" />
+                                <circle cx="112" cy="91" r="3.2" fill="rgba(255,255,255,.95)" />
+                                <circle cx="87" cy="103" r="1.5" fill="rgba(255,255,255,.55)" />
+                                <circle cx="121" cy="103" r="1.5" fill="rgba(255,255,255,.55)" />
+                                <!-- Eyelid lines -->
+                                <path d="M71 90 Q83 84 95 90" fill="none" stroke="rgba(60,30,52,.45)" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M105 90 Q117 84 129 90" fill="none" stroke="rgba(60,30,52,.45)"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <!-- Lashes L -->
+                                <line x1="72" y1="91" x2="69" y2="87" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                                <line x1="77" y1="87" x2="76" y2="82" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                                <line x1="83" y1="85" x2="83" y2="80" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                                <!-- Lashes R -->
+                                <line x1="128" y1="91" x2="131" y2="87" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                                <line x1="123" y1="87" x2="124" y2="82" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                                <line x1="117" y1="85" x2="117" y2="80" stroke="rgba(52,22,42,.55)" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </g>
+
+                            <!-- NOSE -->
+                            <ellipse cx="100" cy="112" rx="5.5" ry="4" fill="url(#noseGrad)" />
+                            <line x1="100" y1="116" x2="100" y2="120" stroke="rgba(200,100,142,.45)"
+                                stroke-width="1.2" />
+                            <path d="M95 120 Q100 126 105 120" fill="none" stroke="rgba(180,80,122,.55)"
+                                stroke-width="1.6" stroke-linecap="round" />
+
+                            <!-- WHISKERS -->
+                            <line x1="35" y1="108" x2="82" y2="113" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+                            <line x1="33" y1="116" x2="82" y2="116" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+                            <line x1="35" y1="124" x2="82" y2="119" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+                            <line x1="165" y1="108" x2="118" y2="113" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+                            <line x1="167" y1="116" x2="118" y2="116" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+                            <line x1="165" y1="124" x2="118" y2="119" stroke="rgba(165,145,185,.5)" stroke-width="1.1"
+                                stroke-linecap="round" />
+
+                            <!-- BLUSH -->
+                            <g id="blush-group">
+                                <ellipse cx="68" cy="113" rx="10" ry="6.5" fill="#ffb8cc" opacity=".42" />
+                                <ellipse cx="132" cy="113" rx="10" ry="6.5" fill="#ffb8cc" opacity=".42" />
+                            </g>
+
+                            <!-- Chest heart -->
+                            <text x="100" y="182" font-size="14" text-anchor="middle" fill="#f6a8cc" opacity=".68"
+                                font-family="serif">♥</text>
+                        </svg>
+                    </div>
+
+                    <div class="cat-name-tag">✦ S K Y ✦</div>
+
+                    <div class="speech-bubble">
+                        <div id="guardian-text">
+                            <span id="typing-text"></span><span class="typing-cursor"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INPUT -->
+                <div class="input-zone">
+                    <div class="input-row">
+                        <input type="text" id="code-input" placeholder="Escribe un código..." autocomplete="off"
+                            spellcheck="false" maxlength="30" />
+                        <button class="btn-submit" onclick="submitCode()">Abrir ✦</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FINAL LETTER -->
+            <div id="letter-screen">
+                <button class="letter-close-btn" onclick="closeLetter()" title="Cerrar">✕</button>
+                <div class="letter-container">
+                    <div class="letter-roses">🌸 ✨ 🌸 ✨ 🌸</div>
+                    <div class="letter-paper">
+                        <button class="letter-scroll-btn letter-scroll-up" onclick="scrollLetterUp()"
+                            title="Subir">▲</button>
+                        <button class="letter-scroll-btn letter-scroll-down" onclick="scrollLetterDown()"
+                            title="Bajar">▼</button>
+
+
+                        <div class="letter-greeting">Para ti, mi amor 💕</div>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body" id="letter-body"></div>
+                        <div class="letter-divider"></div>
+                        <div class="letter-signature">Con todo mi corazón 🌸</div>
+                    </div>
+                    <div class="letter-roses" style="animation-delay:1.5s">💫 🌸 💕 🌸 💫</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distance Section -->
+        <section class="distance-section">
+            <div class="distance-container">
+                <h2 class="distance-title">La Distancia Es Solo Temporal 💕</h2>
+                <p class="distance-subtitle">Kilómetros que nos separan, pero corazones que laten juntos</p>
+
+                <div class="distance-visual">
+                    <div class="location-point">
+                        <div class="location-icon">📍</div>
+                        <div class="location-name">Quito, Ecuador</div>
+                        <div class="location-heart">💙</div>
+                    </div>
+
+                    <div class="distance-line">
+                        <div class="distance-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">3,180</div>
+                                <div class="stat-label">Kilómetros</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1,975</div>
+                                <div class="stat-label">Millas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">∞</div>
+                                <div class="stat-label">Amor</div>
+                            </div>
+                        </div>
+                        <div class="distance-airplane">✈️</div>
+                    </div>
+
+                    <div class="location-point">
+                        <div class="location-icon">📍</div>
+                        <div class="location-name">Tampa, Florida</div>
+                        <div class="location-heart">💖</div>
+                    </div>
+                </div>
+
+                <div class="distance-message">
+                    <p class="message-main">
+                        Hoy nos separan 3,180 kilómetros de distancia,<br>
+                        pero cada día nos acerca un paso más a estar juntos.
+                    </p>
+                    <p class="message-promise">
+                        Esta distancia es solo un capítulo de nuestra historia,<br>
+                        no el final. Algún día despertaremos en el mismo lugar,<br>
+                        y cada "te extraño" se convertirá en "aquí estás".
+                    </p>
+                    <p class="message-hope">
+                        Hasta entonces, seguiremos construyendo nuestro futuro,<br>
+                        un mensaje, una videollamada, un "te amo" a la vez.
+                    </p>
+                    <div class="message-hearts">
+                        💕 Quito ↔️ Tampa 💕
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-message">
+                    💕 Hecho con amor infinito para ti 💕
+                </p>
+                <p class="footer-date">
+                    Febrero 2025
+                </p>
+                <p class="footer-quote">
+                    "Cada día contigo es mi día favorito"
+                </p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

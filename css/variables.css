@@ -1,0 +1,25 @@
+:root {
+    /* Palette - Pastel & Romantic */
+    --color-bg: #FFFDF5;       /* Cream / Soft White */
+    --color-primary: #FFB7B2;  /* Pastel Pink */
+    --color-secondary: #E2F0CB; /* Lavender / Soft Green */
+    --color-accent: #FF9AA2;   /* Warm Pink / Salmon */
+    --color-text-main: #4A4A4A; /* Dark Slate Gray */
+    --color-text-light: #7A7A7A;
+    --color-white: #FFFFFF;
+    
+    /* Fonts */
+    --font-title: 'Dancing Script', cursive;
+    --font-body: 'Poppins', sans-serif;
+
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    /* Transitions */
+    --transition-slow: all 0.8s ease;
+    --transition-medium: all 0.5s ease;
+    --transition-fast: all 0.3s ease;
+}
