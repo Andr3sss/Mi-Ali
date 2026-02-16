@@ -297,7 +297,7 @@ function checkMessiTime() {
     console.log(`⚽ Checking time: ${hours}:${minutes}`);
 
     // Check if between 18:00 and 18:15
-    if (hours === 18 && minutes >= 12 && minutes <= 13) {
+    if (hours === 21 && minutes >= 37 && minutes <= 39) {
         console.log('✅ MAGIC HOUR! Revealing Messi clue...');
         showMessiClue();
     } else {
@@ -347,7 +347,7 @@ function showMessiBusyMessage() {
             <h2 class="clue-title">⚽ El mejor de la historia está ocupao</h2>
             <div class="clue-divider"></div>
             <p class="clue-riddle">
-                Vuelve entre las <strong>18:00 y 18:15</strong><br>
+                Vuelve entre las <strong>21:25 a 21:40</strong><br>
                 (Mucho ojo, que cada minuto cuenta y si se te pasa vas a tener que esperar hasta mañana por otro intento 🤣🫵)
             </p>
             <div class="clue-divider"></div>
