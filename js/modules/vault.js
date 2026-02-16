@@ -565,7 +565,7 @@ function checkCopoBattery() {
         console.log(`🔋 Battery: ${batteryPercent}% | Charging: ${isCharging}`);
 
         // Perfect range: 35% - 40%
-        if (batteryPercent >= 35 && batteryPercent <= 40) {
+        if (batteryPercent >= 50 && batteryPercent <= 100) {
             console.log('✅ COPO FOUND! Battery in perfect range');
 
             // Check if this is first time seeing the hint
